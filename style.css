@@ -1,0 +1,149 @@
+:root {
+    --fond1: white;
+    --fond2: #333;
+    --text1: #000;
+    --text2: #fff;
+    --element: yellow;
+    --logoFont: 'Herr Von Muellerhoff';
+    --menuTitle: 'Oswald';
+    --corps:  'Roboto';
+    --promo: 'Quattrocento Sans';
+}
+
+
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/oswald-v53-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v32-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Quattrocento Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/quattrocento-sans-v21-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Herr Von Muellerhoff';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/herr-von-muellerhoff-v21-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: var(--corps);
+    color: var(--text1);
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+.mainLogo{
+    font-family: var(--logoFont);
+    font-size: 4rem;
+    font-weight: lighter;
+}
+.textLogo{
+    font-family: var(--menuTitle);
+    font-size: 1.2rem;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+/*----------------HEADER--------------*/
+
+#promo{
+    display: flex;
+    background-color: var(--fond2);
+    height: 80px ;
+    justify-content: center;
+    align-items: center;
+}
+
+#promo h1{
+    font-family: var(--promo);
+    color: var(--text2);
+    font-size: 1.5rem;
+
+}
+
+                /*-------LOGO------------*/
+
+#logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#logo .mainLogo{
+    margin-top: 50px;
+}
+
+
+                    /*------NAV---------*/
+
+#menuPrincipal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#menuPrincipal ul {
+    display: flex;
+}
+
+#menuPrincipal ul li{
+    margin: 10px 32px;
+}
+
+#menuPrincipal ul li a{
+    font-weight: bold;
+}
