@@ -6,10 +6,9 @@
     --element: yellow;
     --logoFont: 'Herr Von Muellerhoff';
     --menuTitle: 'Oswald';
-    --corps:  'Roboto';
+    --corps: 'Roboto';
     --promo: 'Quattrocento Sans';
 }
-
 
 @font-face {
     font-display: swap;
@@ -40,7 +39,6 @@
     src: url('../fonts/quattrocento-sans-v21-latin-regular.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
 
 @font-face {
     font-display: swap;
@@ -82,38 +80,42 @@ ul {
 }
 
 
-.mainLogo{
-    font-family: var(--logoFont);
-    font-size: 4rem;
-    font-weight: lighter;
-}
-.textLogo{
-    font-family: var(--menuTitle);
-    font-size: 1.2rem;
-    font-weight: lighter;
-    font-style: italic;
-}
+
 
 /*----------------HEADER--------------*/
 
-#promo{
+#promo {
     display: flex;
     background-color: var(--fond2);
-    height: 80px ;
+    height: 80px;
     justify-content: center;
     align-items: center;
 }
 
-#promo h1{
+#promo h1 {
     font-family: var(--promo);
     color: var(--text2);
     font-size: 1.5rem;
 
 }
 
-                /*-------LOGO------------*/
+/*-------LOGO------------*/
 
-#logo{
+.mainLogo {
+    font-family: var(--logoFont);
+    font-size: 6rem;
+    font-weight: lighter;
+}
+
+.textLogo {
+    font-family: var(--menuTitle);
+    font-size: 1.2rem;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+
+#logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,29 +123,106 @@ ul {
     margin-bottom: 50px;
 }
 
-#logo .mainLogo{
+#logo .mainLogo {
     margin-top: 50px;
 }
 
 
-                    /*------NAV---------*/
+/*------NAV---------*/
 
-#menuPrincipal{
+#menuPrincipal {
     display: flex;
     justify-content: center;
     align-items: center;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    margin: 0 152px;
 }
 
 #menuPrincipal ul {
     display: flex;
 }
 
-#menuPrincipal ul li{
+#menuPrincipal ul li {
     margin: 10px 32px;
 }
 
-#menuPrincipal ul li a{
+#menuPrincipal ul li a {
     font-weight: bold;
+}
+
+
+/*-------------MAIN------------*/
+
+
+#carrousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 886px;
+    gap: 31px;
+    margin: 24px 157px;
+}
+
+#carrousel .carte {
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+    min-width: 274px;
+}
+
+#carrousel .carte img {
+    width: 100%;
+
+}
+
+#carrousel .carte h3 {
+    font-family: var(--menuTitle);
+    font-size: 0.9rem;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+#carrousel .carte p {
+    font-family: var(--logoFont);
+    font-size: 0.9rem;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+#carrousel #bouton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+#carrousel #bouton p:hover {
+    background-color: var(--element);
+}
+
+#carrousel #bouton p {
+    display: flex;
+    background-color: #999;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+}
+
+/*---------FOOTER-----------*/
+
+#copyright {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--fond2);
+    color: var(--text2);
+    height: 160px;
+    justify-content: center;
+    align-items: center;
+}
+
+#copyright .mainLogo{
+    font-size: 4rem;
 }
