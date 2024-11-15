@@ -7,8 +7,8 @@
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -46,10 +46,13 @@
 
     <main id="container">
 
-        <section id="contact">
+        <section id="contact" >
             <h3>Contact</h3>
             <div id="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60818.76816041208!2d-2.82907382615272!3d47.648769010123736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48101c1ee660f85f%3A0x37b8927e9d6ad86b!2sGRETA%20de%20Bretagne%20Sud%20-%20Agence%20de%20Vannes!5e0!3m2!1sfr!2sfr!4v1731659520695!5m2!1sfr!2sfr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60818.76816041208!2d-2.82907382615272!3d47.648769010123736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48101c1ee660f85f%3A0x37b8927e9d6ad86b!2sGRETA%20de%20Bretagne%20Sud%20-%20Agence%20de%20Vannes!5e0!3m2!1sfr!2sfr!4v1731659520695!5m2!1sfr!2sfr"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             </div>
 
@@ -57,8 +60,8 @@
                 <div id="info" class="nousEcrir">
                     <h4>Nous Ecrire</h4>
                     <form action="envoimail.PHP" method="get">
-                        <p>                        <label for="name">Nom</label>
-                            <input type="text" name="name" placeholder="name"> 
+                        <p> <label for="name">Nom</label>
+                            <input type="text" name="name" placeholder="name">
                         </p>
 
                         <p>
@@ -69,13 +72,14 @@
 
                         <p>
                             <label for="message">Message </label>
-                            <textarea type ="message" name="message" rows="6" placeholder="Raconter votre projet" required=""></textarea>
+                            <textarea type="message" name="message" rows="5" placeholder="Raconter votre projet"
+                                required=""></textarea>
 
-                        </p>                        
-    
+                        </p>
+
                         <p><button type="submit">ENVOYER</button></p>
                     </form>
-    
+
                 </div>
                 <div id="info" class="nousTrouver">
                     <h4>Nous Trouver</h4>
@@ -85,13 +89,13 @@
                         Tel:(33)1 252 389 3571
 
                     </address>
-                
+
                     <p>
                         Lundi - Vendredi: 9:00 à 18:00<br>
                         Samedi: 10:00 à 20:00<br>
                         Dimanche: Fermé
                     </p>
-    
+
                 </div>
             </div>
 
@@ -102,11 +106,23 @@
 
     <footer class="container">
         <div id="copyright">
-            <h2  class="mainLogo">Moschino</h2>
+            <h2 class="mainLogo">Moschino</h2>
             <p>&copy; - Copyright 2022</p>
         </div>
     </footer>
-    
+
+    <script type="text/javascript" src="script/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="script/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+        /*$(window).load(function() {
+        $('#slider').nivoSlider();
+    });*/
+        $('#menuPrincipal #menuPhoto').click(function () {
+            $("#menuPrincipal ul").slideToggle(1500);
+
+        });
+    </script>
+
 
 
 

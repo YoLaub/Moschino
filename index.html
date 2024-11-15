@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +10,10 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header class="container">
-        <div id="promo" >
+        <div id="promo">
             <h1>
                 -20% sur les livraisons en France métropolitaine jusqu'au 15/03!
             </h1>
@@ -20,18 +22,18 @@
             <a href="/index.html">
                 <h2 class="mainLogo">
                     Moschino
-                </h2>                
+                </h2>
             </a>
-            
+
             <h3 class="textLogo">
                 Collection d'été
             </h3>
         </div>
-        <div id="menuPhoto">
-            <i class="fa-solid fa-camera"></i>
-        </div>
 
         <nav id="menuPrincipal">
+            <div id="menuPhoto">
+                <i class="fa-solid fa-camera"></i>
+            </div>
             <ul>
                 <li><a class="choix" href="/index.html">HOME</a></li>
                 <li><a href="#">ABOUT</a></li>
@@ -76,7 +78,7 @@
                     <p>été / femme / jaune</p>
                 </div>
             </div>
- 
+
             <div id="bouton">
                 <p>1</p>
                 <p>2</p>
@@ -88,10 +90,23 @@
 
     <footer class="container">
         <div id="copyright">
-            <h2  class="mainLogo">Moschino</h2>
+            <h2 class="mainLogo">Moschino</h2>
             <p>&copy; - Copyright 2022</p>
         </div>
     </footer>
-    
+
+    <script type="text/javascript" src="script/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="script/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+        /*$(window).load(function() {
+        $('#slider').nivoSlider();
+    });*/
+        $('#menuPrincipal #menuPhoto').click(function () {
+            $("#menuPrincipal ul").slideToggle(1500);            
+            
+        });
+    </script>
+
 </body>
+
 </html>

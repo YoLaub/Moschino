@@ -239,7 +239,7 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 20px 13%;
+    margin: 20px 27%;
 }
 
 #contact #map iframe {
@@ -293,7 +293,6 @@ ul {
     background-color: var(--fond2);
     width: 45%;
     ;
-
 }
 
 #contact #nousContacter .nousEcrir form label {
@@ -338,6 +337,8 @@ ul {
 
 @media screen and (max-width:576px) {
 
+    /*---------INDEX----------*/
+
     #promo h1 {
         font-size: 0.9rem;
     }
@@ -345,20 +346,35 @@ ul {
     #carrousel .carte {
         width: 100%;
         min-width: 380px;
-
-
     }
 
-    #menuPrincipal {
-        display: none;
+
+    #menuPrincipal{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menuPrincipal ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 
     #menuPhoto {
         display: flex;
         font-size: 4rem;
         justify-content: center;
+        margin: 10px 0;
 
+}
+
+    #menuPhoto:active{
+        font-size: 4.5rem;
     }
+
+    
+
+
 
     #carrousel .carte h3 {
         font-family: var(--menuTitle);
