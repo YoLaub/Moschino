@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moschino</title>
+    <link rel="stylesheet" href="style/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/style/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/style/lightBox.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style/default.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="/style/nivo-slider.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="/style/style.css">
 </head>
 
@@ -26,12 +27,10 @@
                     Moschino
                 </h2>
             </a>
-
             <h3 class="textLogo">
                 Collection d'été
             </h3>
         </div>
-
         <nav id="menuPrincipal">
             <div id="menuPhoto">
                 <i class="fa-solid fa-camera"></i>
@@ -49,60 +48,133 @@
     <main class="container">
         <div class="slider-wrapper theme-default">
             <div id="slider" class="nivoSlider">
-                <img src="/images/slides/slider1.jpg"  alt="" title="#htmlcaption1" /></a>
+                <img src="/images/slides/slider1.jpg" alt="" title="#htmlcaption1" /></a>
                 <img src="/images/slides/slider2.jpg" data-transition="slideInLeft" title="#htmlcaption2" />
-                <img src="/images/slides/slider3.jpg"  alt="" title="#htmlcaption3" />
+                <img src="/images/slides/slider3.jpg" alt="" title="#htmlcaption3" />
             </div>
             <div id="htmlcaption1" class="nivo-html-caption">
-                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+                <h2>This is an example of a HTML caption.</h2>
+                <h3>With a link <i class="fa-solid fa-leaf"></i><button>Plus d'info</button></h3>
+
+
             </div>
             <div id="htmlcaption2" class="nivo-html-caption">
-                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+                <h2>This is an example of a HTML caption.</h2>
+                <h3>With a link <i class="fa-solid fa-leaf"></i><button>Plus d'info</button></h3>
+
+
             </div>
             <div id="htmlcaption3" class="nivo-html-caption">
-                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+                <h2>This is an example of a HTML caption.</h2>
+                <h3>With a link <i class="fa-solid fa-leaf"></i> <button>Plus d'info</button></h3>
+
             </div>
         </div>
-        <section id="carrousel">
-            <div class="block">
-                <div class="carte">
-                    <img src="/images/images-mode/01.jpg" alt="photo mode">
+        <section id="carrousel myModal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="block modal-content">
+                <div class="carte mySlides">
+                    <img class="hover-shadow" onclick="openModal();currentSlide(1)" src="/images/images-mode/01.jpg"
+                        alt="photo mode">
                     <h3>SUNSET BEACH</h3>
                     <p>été / femme / jaune</p>
                 </div>
-                <div class="carte">
-                    <img src="/images/images-mode/02.jpg" alt="photo mode">
+                <div class="carte mySlides">
+                    <img class="hover-shadow" onclick="openModal();currentSlide(2)" src="/images/images-mode/02.jpg"
+                        alt="photo mode">
                     <h3>SUNSET BEACH</h3>
                     <p>été / femme / jaune</p>
                 </div>
-                <div class="carte">
-                    <img src="/images/images-mode/03.jpg" alt="photo mode">
+                <div class="carte mySlides">
+                    <img class="hover-shadow" onclick="openModal();currentSlide(3)" src="/images/images-mode/03.jpg"
+                        alt="photo mode">
                     <h3>SUNSET BEACH</h3>
                     <p>été / femme / jaune</p>
                 </div>
-                <div class="carte">
-                    <img src="/images/images-mode/04.jpg" alt="photo mode">
+                <div class="carte mySlides">
+                    <img class="hover-shadow" onclick="openModal();currentSlide(4)" src="/images/images-mode/04.jpg"
+                        alt="photo mode">
                     <h3>SUNSET BEACH</h3>
                     <p>été / femme / jaune</p>
                 </div>
-                <div class="carte">
-                    <img src="/images/images-mode/05.jpg" alt="photo mode">
+                <div class="carte mySlides">
+                    <img class="hover-shadow" onclick="openModal();currentSlide(5)" src="/images/images-mode/05.jpg"
+                        alt="photo mode">
                     <h3>SUNSET BEACH</h3>
                     <p>été / femme / jaune</p>
                 </div>
-                <div class="carte">
-                    <img src="/images/images-mode/06.jpg" alt="photo mode">
+                <div class="carte mySlides">
+                    <img class="hover-shadow" onclick="openModal();currentSlide(6)" src="/images/images-mode/06.jpg"
+                        alt="photo mode">
                     <h3>SUNSET BEACH</h3>
                     <p>été / femme / jaune</p>
                 </div>
-            </div>
 
-            <div id="bouton">
-                <p>1</p>
-                <p>2</p>
-                <p>Suite > </p>
+                <!-- The Modal/Lightbox -->
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
 
-            </div>
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 6</div>
+                            <img src="/images/images-mode/01.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 6</div>
+                            <img src="/images/images-mode/02.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 6</div>
+                            <img src="/images/images-mode/03.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 6</div>
+                            <img src="/images/images-mode/04.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">5 / 6</div>
+                            <img src="/images/images-mode/04.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">6/ 6</div>
+                            <img src="/images/images-mode/04.jpg" style="width:100%">
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <img class="demo cursor" src="/images/images-mode/01.jpg" style="width:100%"
+                            onclick="currentSlide(1)" alt="Nature and sunrise">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="/images/images-mode/02.jpg" style="width:100%"
+                            onclick="currentSlide(2)" alt="Snow">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="/images/images-mode/03.jpg" style="width:100%"
+                            onclick="currentSlide(3)" alt="Mountains and fjords">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="/images/images-mode/04.jpg" style="width:100%"
+                            onclick="currentSlide(4)" alt="Northern Lights">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="/images/images-mode/05.jpg" style="width:100%"
+                            onclick="currentSlide(5)" alt="Northern Lights">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="/images/images-mode/06.jpg" style="width:100%"
+                            onclick="currentSlide(6)" alt="Northern Lights">
+                    </div>
+                </div>
+
+                <div id="bouton">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>Suite > </p>
+                </div>
         </section>
     </main>
 
