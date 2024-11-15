@@ -168,6 +168,18 @@ ul {
 
 /*-------------MAIN------------*/
 
+.slider-wrapper, .theme-default{
+    margin: 30px 120px;
+}
+/*------------SLIDE---------------*/
+
+.nivo-caption {
+    bottom: 44px;
+    height: 50px;
+    text-align: center;
+    font-size: 2rem;
+}
+
 /*-----HOME-----------*/
 
 

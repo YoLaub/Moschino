@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moschino</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/style/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/style/style.css">
 </head>
 
 <body>
@@ -45,35 +47,51 @@
     </header>
 
     <main class="container">
+        <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="/images/slides/slider1.jpg"  alt="" title="#htmlcaption1" /></a>
+                <img src="/images/slides/slider2.jpg" data-transition="slideInLeft" title="#htmlcaption2" />
+                <img src="/images/slides/slider3.jpg"  alt="" title="#htmlcaption3" />
+            </div>
+            <div id="htmlcaption1" class="nivo-html-caption">
+                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+            <div id="htmlcaption2" class="nivo-html-caption">
+                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+            <div id="htmlcaption3" class="nivo-html-caption">
+                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+        </div>
         <section id="carrousel">
             <div class="block">
                 <div class="carte">
-                    <img src="/images-mode/images-mode/01.jpg" alt="photo mode">
+                    <img src="/images/images-mode/01.jpg" alt="photo mode">
                     <h3>SUNSET BEACH</h3>
                     <p>été / femme / jaune</p>
                 </div>
                 <div class="carte">
-                    <img src="/images-mode/images-mode/02.jpg" alt="photo mode">
+                    <img src="/images/images-mode/02.jpg" alt="photo mode">
                     <h3>SUNSET BEACH</h3>
                     <p>été / femme / jaune</p>
                 </div>
                 <div class="carte">
-                    <img src="/images-mode/images-mode/03.jpg" alt="photo mode">
+                    <img src="/images/images-mode/03.jpg" alt="photo mode">
                     <h3>SUNSET BEACH</h3>
                     <p>été / femme / jaune</p>
                 </div>
                 <div class="carte">
-                    <img src="/images-mode/images-mode/04.jpg" alt="photo mode">
+                    <img src="/images/images-mode/04.jpg" alt="photo mode">
                     <h3>SUNSET BEACH</h3>
                     <p>été / femme / jaune</p>
                 </div>
                 <div class="carte">
-                    <img src="/images-mode/images-mode/05.jpg" alt="photo mode">
+                    <img src="/images/images-mode/05.jpg" alt="photo mode">
                     <h3>SUNSET BEACH</h3>
                     <p>été / femme / jaune</p>
                 </div>
                 <div class="carte">
-                    <img src="/images-mode/images-mode/06.jpg" alt="photo mode">
+                    <img src="/images/images-mode/06.jpg" alt="photo mode">
                     <h3>SUNSET BEACH</h3>
                     <p>été / femme / jaune</p>
                 </div>
@@ -98,12 +116,12 @@
     <script type="text/javascript" src="script/jquery-1.9.0.min.js"></script>
     <script type="text/javascript" src="script/jquery.nivo.slider.js"></script>
     <script type="text/javascript">
-        /*$(window).load(function() {
-        $('#slider').nivoSlider();
-    });*/
+        $(window).load(function () {
+            $('#slider').nivoSlider();
+        });
         $('#menuPrincipal #menuPhoto').click(function () {
-            $("#menuPrincipal ul").slideToggle(1500);            
-            
+            $("#menuPrincipal ul").slideToggle(1500);
+
         });
     </script>
 
