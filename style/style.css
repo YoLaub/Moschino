@@ -168,9 +168,11 @@ ul {
 
 /*-------------MAIN------------*/
 
-.slider-wrapper, .theme-default{
+.slider-wrapper,
+.theme-default {
     margin: 30px 120px;
 }
+
 /*------------SLIDE---------------*/
 
 /* ==============V1================*/
@@ -206,40 +208,45 @@ ul {
 
 /*============= modif slider =============*/
 
-.nivo-caption{
+.nivo-caption {
     background-color: rgba(128, 128, 128, 0.58);
-    font-size:3rem;
+    font-size: 3rem;
     width: 60%;
     height: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    }
-    .nivo-caption h2{
-    font-size:3rem;
-    padding-top:8%;
-    padding-left:6%;
-    }
-    .nivo-caption h3{
-    font-size:2rem;
-    margin-bottom:8%;
-    padding-left:6%;
-    }
-    .nivo-caption .iconeLien{
-    width:85%;
+}
+
+.nivo-caption h2 {
+    font-size: 3rem;
+    padding-top: 8%;
+    padding-left: 6%;
+}
+
+.nivo-caption h3 {
+    font-size: 2rem;
+    margin-bottom: 8%;
+    padding-left: 6%;
+}
+
+.nivo-caption .iconeLien {
+    width: 85%;
     display: flex;
     justify-content: center;
-    padding-left:6%;
-    }
-    .nivo-caption i{
-    margin-right:4%;
-    }
-    .nivo-caption button{
-    font-size:1.5rem;
-    padding:5px 24px;
+    padding-left: 6%;
+}
+
+.nivo-caption i {
+    margin-right: 4%;
+}
+
+.nivo-caption button {
+    font-size: 1.5rem;
+    padding: 5px 24px;
     border-radius: 20px;
-    margin-left:4%;
-    }
+    margin-left: 4%;
+}
 
 
 
@@ -309,6 +316,14 @@ ul {
     align-items: center;
     justify-content: center;
     padding: 10px 15px;
+}
+
+#carrousel .block a img .hover-shadow {
+    transition: 0.3s;
+}
+
+#carrousel .block a img .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*--------CONTACT----------*/
@@ -418,7 +433,7 @@ ul {
     /*---------INDEX----------*/
 
     #promo h1 {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     #carrousel .carte {
@@ -426,13 +441,17 @@ ul {
         min-width: 380px;
     }
 
+    .slider-wrapper, .theme-default{
+        display: none;
+    }
 
-    #menuPrincipal{
+
+    #menuPrincipal {
         display: flex;
         flex-direction: column;
     }
 
-    #menuPrincipal ul{
+    #menuPrincipal ul {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -444,13 +463,13 @@ ul {
         justify-content: center;
         margin: 10px 0;
 
-}
+    }
 
-    #menuPhoto:active{
+    #menuPhoto:active {
         font-size: 4.5rem;
     }
 
-    
+
 
 
 
