@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moschino</title>
+    <link rel="stylesheet" href="style/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="style/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="style/lightBox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header class="container">
+        <div id="promo">
+            <h1>
+                -20% sur les livraisons en France métropolitaine jusqu'au 15/03!
+            </h1>
+        </div>
+        <div id="logo" id="home">
+            <a href="index.html">
+                <h2 class="mainLogo">
+                    Moschino
+                </h2>
+            </a>
+            <h3 class="textLogo">
+                Collection d'été
+            </h3>
+        </div>
+        <nav id="menuPrincipal">
+            <div id="menuPhoto">
+                <i class="fa-solid fa-camera"></i>
+            </div>
+            <ul>
+                <li><a class="choix" href="index.html">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section id="blog">
+            <a href="">
+                <article class="texte">
+                    <img src="images/images-mode/blog-1.jpg" alt="">
+                    <h3>
+                        article n1
+                    </h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam obcaecati ullam, exercitationem repellat totam ratione cumque asperiores excepturi fugit. Amet laboriosam minus ut nam eligendi in iusto? Natus, unde!</p>
+                </article>
+            </a>
+            <a href="">
+                <article class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/I4cYOJhmnuY?si=s_I0o13sIkM0JA2I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h3>5 Tendances incoutournables pour l'automne 2024</h3>
+                    <p>
+                        Entre revival boho, retour du tartan, coquetterie douce-acide, influence des héroïnes de Truman Capote et désir de jouer avec les codes preppy, focus sur 5 tendances qui s’apprêtent à influencer les vestiaires de la rentrée 2024…
+                    </p>
+
+                </article>
+
+            </a>
+
+            <a href="">
+                <article class="texte">
+                    <img src="images/images-mode/blog-2.jpg" alt="">
+                    <h3>
+                        article n2
+                    </h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam obcaecati ullam, exercitationem repellat totam ratione cumque asperiores excepturi fugit. Amet laboriosam minus ut nam eligendi in iusto? Natus, unde!</p>
+                </article>
+            </a>
+
+            <a href="">
+                <article class="texte">
+                    <img src="images/images-mode/blog-3.jpg" alt="">
+                    <h3>
+                        article n3
+                    </h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam obcaecati ullam, exercitationem repellat totam ratione cumque asperiores excepturi fugit. Amet laboriosam minus ut nam eligendi in iusto? Natus, unde!</p>
+                </article>
+            </a>
+
+            <a href="#">
+                <article class="ad">
+                    <img src="images/images-mode/AlbedoBase_XL_mannequin_mode_pur_noir_et_blanc_avec_text_dor_1.jpg" alt="">
+
+                </article>
+            </a>
+
+            <a href="#">
+                <article class="ad">
+                    <img src="images/images-mode/Leonardo_Kino_XL_mannequin_mode_pur_noir_et_blanc_avec_text_do_1.jpg" alt="">
+
+                </article>
+            </a>
+
+            </article>
+        </section>
+
+    </main>
+
+    
+    
+    <footer class="container">
+        <div id="copyright">
+            <h2 class="mainLogo">Moschino</h2>
+            <p>&copy; - Copyright 2022</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="script/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="script/lightBox.js"></script>
+    <script type="text/javascript" src="script/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('#slider').nivoSlider();
+        });
+        $('#menuPrincipal #menuPhoto').click(function () {
+            $("#menuPrincipal ul").slideToggle(1500);
+
+        });
+
+        new SimpleLightbox({ elements: '.imageGallery1 a' });
+    </script>
+</body>

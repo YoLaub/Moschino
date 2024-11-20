@@ -39,7 +39,7 @@
                 <li><a class="choix" href="index.html">HOME</a></li>
                 <li><a href="#">ABOUT</a></li>
                 <li><a href="#">SHOP</a></li>
-                <li><a href="#">BLOG</a></li>
+                <li><a href="blog.html">BLOG</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
@@ -114,6 +114,23 @@
         </section>
     </main>
 
+    <Aside class="container media">
+
+        <div id="video">
+            <h3>La vidéo mode du moment</h3>
+            <iframe src="https://www.youtube.com/embed/I4cYOJhmnuY?si=ulq6W6l3kdtivXxq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+
+        <div class="nousTrouver">
+            <h3>Nous trouver</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11726.509595557396!2d-2.774861407355758!3d47.63946125496247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48101c12889c65af%3A0x71dd7367142f1f3c!2sFlower%20Camping%20Le%20Conleau%20%7C%20Camping%204%20%C3%A9toiles%20Vannes!5e0!3m2!1sfr!2sfr!4v1732002658701!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+        </div>
+
+    </Aside>
+
     <footer class="container">
         <div id="copyright">
             <h2 class="mainLogo">Moschino</h2>
@@ -122,12 +139,8 @@
     </footer>
 
     <script type="text/javascript" src="script/jquery-1.9.0.min.js"></script>
-    <script type="text/javascript" src="script/lightBox.js"></script>
-    <script type="text/javascript" src="script/jquery.nivo.slider.js"></script>
     <script type="text/javascript">
-        $(window).load(function () {
-            $('#slider').nivoSlider();
-        });
+  
         $('#menuPrincipal #menuPhoto').click(function () {
             $("#menuPrincipal ul").slideToggle(1500);
 
